@@ -1,0 +1,143 @@
+* {box-sizing: border-box;}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header, footer {
+	width: 100%;
+	min-height: 60px;	
+	background-color: #000;
+}
+nav img {
+	margin: 15px 0;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;	
+	float: right;
+}
+nav ul > li {
+	display: inline-block;
+}
+nav ul > li > a {
+	text-decoration: none;
+	display: block;
+	line-height: 60px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	color: #e5a614;
+}
+nav ul li a:hover {
+	color: #fff;
+}
+
+			/*Phones*/
+@media (max-width: 767px) {
+	nav ul {
+		float: none;
+	}
+	nav ul > li {
+		display: block;
+	}
+	nav {
+		text-align: center;
+	}
+}
+			/*End*/
+.hero {
+	height: 100vh;
+	background: url(https://images.pexels.com/photos/243206/pexels-photo-243206.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) center/cover no-repeat;
+	overflow: hidden;
+	padding-top: 20vh;
+}
+.slogan {
+	background-color: rgba(0, 0, 0, 0.5);
+	max-width: 600px;
+	float: right;
+	padding: 0 75px;
+	border-radius: 20px;
+}
+.slogan h1 {
+	color: #e5a614;
+	line-height: 100px;
+	font-size: 4em;
+	text-transform: uppercase;
+}
+			
+			/*Phones*/
+@media (max-width: 767px) {
+	.slogan {
+		width: 80%;
+		max-width: 450px;
+		min-height: 150px;
+	}
+	.slogan h1 {
+		font-size: 2em;
+		text-align: center;
+	}	
+}
+@media (max-width: 420px) {
+	.slogan {
+		padding-top: 20px;
+	}
+	.slogan h1 {
+		line-height: 32px;
+	}
+}
+			/*End*/
+.gallery {
+	margin: 50px 0;
+	width: 100%;
+}
+figure {
+	width: 100%;
+	padding: 0;
+	margin: 0;	
+}
+.photo > img {
+	float: left;
+	width: 30%;	
+}
+img.margin-right {
+	margin-right: 5%;
+}
+
+			/*Tablets*/
+@media (min-width: 768px) and (max-width: 1199px) {
+	.photo > img {
+	width: 32%;
+	}
+	img.margin-right {
+		margin-right: 2%;
+	}
+}
+			/*Phones*/
+@media (max-width: 767px) {
+	.photo > img {
+		float: none;
+		width: 80%;
+		height: auto;
+		margin-left: 10%;
+	}
+}
+			/*End*/
+.map img {
+	width: 100%;
+}
+footer p {
+	color: #e5a614; 
+	text-align: center; 
+	line-height: 50px;
+}
